@@ -1,8 +1,8 @@
 /* Barra de navegacion */
 
 .navbar {
-  padding: 2rem;
-  background-color: #f5f6f7;
+  padding: 1rem;
+  background-color: #494C3A; /*494C3A*/
 }
 
 .navbar-collapse {
@@ -23,21 +23,26 @@ h1 {
   font-size: 2.5rem;
   /*font-family: 'Domine', serif;
   font-family: 'Montserrat', sans-serif;*/
+  color: #edf1f0; /**/
   font-family: 'Fira Sans', sans-serif;
 }
 
 .seccion-oscura {
   color: white;
-  background-color: #1b1b32;
+  background-color: #232d2b;
 }
 
-.seccion-clara {
+/*.seccion-clara {
   color: black;
   background-color: whitesmoke;
+}*/
+.seccion-clara {
+  color: #edf1f0;
+  background-color: #171719;
 }
 
 .seccion-titulo {
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 15px 0;
   /*font-family: 'Rubik Dirt', cursive;*/
   font-family: 'Domine', serif;
@@ -57,9 +62,14 @@ h1 {
   margin: 20px;
 }
 
-.texto-negro {
+/*.texto-negro {
   color: black;
+}*/
+
+.texto-negro {
+  color: #697456;
 }
+
 
 .texto-blanco {
   color: white;
@@ -68,9 +78,24 @@ h1 {
 /* Seccion Hero */
 
 .hero {
-  background-color: #f5f6f7;
+  position: relative;
+  background-color: #212121;
+  background-image: url(/imagenes/backgroundimg.jpg);
+  background-size: cover;
+  background-position: center center;
   min-height: 450px;
   text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0); /* Adjust the alpha value to control the darkness */
+  z-index: 1; /* Places the overlay on top of the background image */
 }
 
 .hero-principal {
@@ -81,12 +106,15 @@ h1 {
   width: 200px;
   height: 200px;
   margin: 20px;
+  border: 8px solid #b3a083; /*827D6D*/
 }
+
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: #494C3A;
 }
+
 
 /* Sobre mi */
 
@@ -118,13 +146,13 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: #494C3A;
 }
 
 .experiencia i {
   font-size: 2.5rem;
   color: #7ade30;
-  background-color: #0a0a23;
+  background-color: #494C3A;
   padding: 8px 19px;
   border-radius: 50%;
 }
@@ -269,7 +297,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #b3a083;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
